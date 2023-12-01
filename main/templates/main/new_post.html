@@ -1,0 +1,90 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>메모 페이지</title>
+</head>
+<body>
+    <h1>메모 페이지</h1>
+    <form method="POST">
+        {% csrf_token %}
+        제목<br>
+        <input type="text" name="postname"><br>
+        내용<br>
+        <textarea rows="10" cols="50" name="contents"></textarea><br>
+        <input type="file" name="mainphoto"><br>
+        <input type="submit" value="메모">
+    </form>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+{%load static%}
+<head>
+    <meta charset="UTF-8">
+    <title>메모 작성</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'memo' %}">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="mt-5 mb-3">메모 페이지</h1>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="postname">제목</label>
+                <input type="text" class="form-control" id="postname" name="postname">
+                {% if form.postname.errors %}
+                    <div class="alert alert-danger">
+                        {{ form.postname.errors }}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                <label for="contents">내용</label>
+                <textarea class="form-control" id="contents" rows="10" name="contents"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="mainphoto">메인 사진</label>
+                <input type="file" class="form-control-file" id="mainphoto" name="mainphoto">
+            </div>
+            <button type="submit" class="btn btn-primary">메모</button>
+        </form>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>    
+<body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- {% include "head.html" %}
+{% include "header.html" %} -->
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sung Hyundong</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static '/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i' %}" rel="stylesheet">
+  
+  <!-- Vendor CSS Files -->
+  <link href="{% static '/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static '/css/style.css' %}" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Dohyeon&display=swap&subset=korean" rel="stylesheet">
+  <style>
+    body{
+      font-family: 'Dohyeon', sans-serif';
+    }
+  </style> -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <h1 class="logo me-auto me-lg-0"><a href="/">Sung Hyundong</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="{% static '/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <!-- <li><a href="{% url 'resume' %}">Resume</a></li> -->
+          <!-- <li><a href="{% url 'services' %}">Services</a></li> -->
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="{% url 'memo' %}">Memo</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="{% static '/img/about.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>백엔드/AI 개발</h3>
+            <p class="fst-italic">
+              
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-rounded-right"></i> <strong>이름: </strong>성현동</li><br>
+                  <li><i class="bi bi-rounded-right"></i> <strong>전공: </strong>컴퓨터공학과</li><br>
+                  <li><i class="bi bi-rounded-right"></i> <strong>학적상태: </strong>재학중</li><br>
+                  <li><i class="bi bi-rounded-right"></i> <strong>거주지: </strong> 후문 자취</li><br>
+                  <li><i class="bi bi-rounded-right"></i> <strong>군문제: </strong>공군병장 만기전역</li><br>
+                  <li><i class="bi bi-rounded-right"></i> <strong>연락처: </strong> 010 3188 1129</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <!-- Additional content goes here -->
+                </ul>
+              </div>
+            </div>
+            <p>
+              AI와 웹 개발의 교차점에서 저의 진로를 찾아가고 있습니다.<br> 
+              비록 AI 분야의 기초가 부족할 수 있지만, 다양한 프로젝트를 통해 입증된 빠른 학습 능력과 끈기를 바탕으로, 이 분야에서의 전문성을 빠르게 키워나갈 준비가 되어 있습니다.
+              <br>
+팀에 기여하고 함께 성장할 수 있는 기회를 갖게 된다면, 제가 가진 열정과 능력을 바탕으로 최선을 다해 이 분야에서의 전문가로 거듭나겠습니다.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>부가적인 신원정보입니다<br>내년 1학기는 추가학기(9학기)이며 2학기는 진로결정 문제로 졸업유예할 예정이라 근무에 지장없습니다</p>
+        </div>
+
+        <div class="row counters">
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="1" data-purecounter-end="1998" data-purecounter-duration="1" class="purecounter"></span>
+            <p>출생연도</p>
+          </div>
+
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+            <p>만 나이</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="1" class="purecounter"></span>
+            <p>학번</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="1" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+            <p>현재 학기</p>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>학부 프로젝트와 알고리즘 공부를 진행할 때 사용했던 파이썬과 C에 가장 익숙하고 능숙합니다.<br>  장고와 스프링을 이용한 백엔드 서버 개발 경험이 있으며 프론트엔드는 기본개념은 알고 있지만 능숙하진 못합니다(구글링은 자신있습니다^^)<br>번외로 영어와 춤에 소질 있습니다(춤..시키진 말아주세요 ㅠㅠ..)</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Python/C <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Backend(Django) <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Backend(Spring) <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Frontend <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">English <i class="val">TOEIC 960</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Dance <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="background-color: red;"></div>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    
+    <!-- ======= Testimonials Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>그동안 학부에서 해왔던 관련 프로젝트 및 동아리 경력입니다</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">AI/Data Relevant</h3>
+            
+            <div class="resume-item pb-0">
+              <h4>자율주행 프로젝트(Vision)</h4>
+              <h5>2023.8 - Present</h5>
+              <p>
+              <ul>
+                <li>pygame, opencv를 이용한 모방학습,lane detection, path decision, viechle control 모듈 개발 프로젝트 진행 중</li>
+              </ul>
+              <h4>OPEN AI 뉴스레터 서비스(LLM)</h4>
+              <h5>2023.9 - Present</h5>
+              <ul>
+                <li>구독자 관심사에 기반해 관련 뉴스 기사를 크롤링하여 OPEN AI로 요약한 뒤 카톡으로 포맷팅해 전송해주는 웹서비스 프로젝트 진행 중</li>
+              </ul>
+              </p>
+              <h4>자연어 처리 및 텍스트 마이닝 분석(Data)</h4>
+              <h5>2023.6 - Present</h5>
+              <p>
+              <ul>
+                <li>원광대 한의대 졸업논문에 공저자로 참가해, 체질별 소견서 3000여개에 대한 단어연관성 및 중심성 계수를 분석하고 이미지화하는 프로그램 구현(투고완료, 심사대기 중)</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Web & Algorithm</h3>
+            <div class="resume-item">
+              <h4>서강대 웹 개발 동아리 백엔드 운영진 활동</h4>
+              <h5>2023.1 - 2023.11</h5>
+              <p><em>멋쟁이사자처럼</em></p>
+              <p>백엔드 운영진으로 활동하며, 리크루팅 사이트 제작 / 카카오 API 연동 기술 등에 관한 프로젝트 강의 진행을 맡고 해커톤 멘토로 참여했다</p>
+            </div>
+            <div class="resume-item">
+              <h4>파이썬 알고리즘 스터디</h4>
+              <h5>2023.6 - 2023.9</h5>
+              <p><em>커피브레이크</em></p>
+              <p>브루트 포스, 그리디 알고리즘, 다이나믹 프로그래밍, 그래프(BFS,DFS),시뮬레이션 등 주요 알고리즘을 학습, 관련문제를 풀고 커밋하는 활동을 하며 문제풀이능력을 집중 배양함</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Restart</h3>
+            <div class="resume-item">
+              <h4>서강대 웹 개발 동아리 부원 활동</h4>
+              <h5>2022.3 - 2022.11</h5>
+              <p><em>멋쟁이사자처럼</em></p>
+              <p>
+              <ul>
+                <li>기본 html,css,js 지식 / 장고(drf) 지식을 동아리 강의 및 실습을 통해 습득</li>
+                <li>멋사 중앙 주관 해커톤, 신촌톤 백엔드개발자로 참여</li>
+                <li>자발적인 방학 프로젝트로 서강대 맛집 추천 서비스 백엔드 개발 참여</li>
+                <li>최종 프로젝트로 향수 추천 서비스 개발</li>
+              </ul>
+              </p>
+            </div>
+            <h3 class="resume-title">Sad Old Days...</h3>
+            <div class="resume-item">
+              <h4>방황의 시기 및 군입대</h4>
+              <h5>2017 - 2020</h5>
+              <p><em></em></p>
+              <p>
+              <ul>
+                <li>당시 보안에 관심이 많아 고려대 사이버국방학과를 목표로 반수를 시도</li>
+                <li>결과적으로 실패..ㅠ 전공 공부 따라가기도 급급했던 것으로 스스로를 평가</li>
+                <li>당시 모든 과목 과제가 C로 진행되어 이 때 C 신택스와 로우레벨 아키텍처에 대한 이해를 갖게됨  </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static '/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static '/vendor/aos/aos.js' %}"></script>
+  <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static '/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static '/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static '/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static '/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static '/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static '/js/main.js' %}"></script>
+
+</body>
+
+</html>
