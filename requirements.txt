@@ -69,3 +69,4 @@ whitenoise==6.6.0
 wsproto==1.2.0
 
 mysqlclient==2.2.0
+PyMySQL==1.1.0

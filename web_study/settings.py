@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 from django.core.exceptions import ImproperlyConfigured
+import pymysql
+pymysql.install_as_MySQLdb()
 
 def get_env_variable(var_name):
     try:
