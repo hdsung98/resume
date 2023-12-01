@@ -6,6 +6,10 @@ from dotenv import load_dotenv
 
 
 def main():
+    dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+    if os.path.exists(dotenv_path):
+        load_dotenv(dotenv_path)
+    
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'web_study.settings')
     try:
         from django.core.management import execute_from_command_line
@@ -17,11 +21,7 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
     
-    dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
-    if os.path.exists(dotenv_path):
-        load_dotenv(dotenv_path)
-
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'web_study.settings')
+    
 
 if __name__ == '__main__':
     main()
