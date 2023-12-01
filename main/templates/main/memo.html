@@ -33,7 +33,7 @@
   </header><!-- End Header -->
 
   <!-- Memo Page Content -->
-  <div class="container">
+  <div class="container mt-5 pt-5"> 
     <h1 class="mt-5 mb-3">메모장</h1>
     <button class="btn btn-primary mb-3"><a href="new_post/" class="text-white">메모 작성</a></button>
     <div class="row border-bottom mb-3">
@@ -48,13 +48,13 @@
         <div class="col-4 text-center">{{ post.created_at|date:"Y년 m월 d일 H:i" }}</div>
       </div>
     {% empty %}
-      <div class="row">
+      <div class="row mb-5">
         <div class="col text-center">메모장이 비어있습니다!</div>
       </div>
     {% endfor %}
     
     <div class="d-flex justify-content-center align-items-center" style="height: 50vh;">
-      <div class="pagination text-center">
+      <div class="pagination text-center" style="height: 50px;">
         <span class="step-links">
           <span class="current">
             {{ page_obj.paginator.num_pages }} 페이지 중 {{ page_obj.number }} 페이지 (5개 초과하면 다음페이지로 넘어갑니다)
