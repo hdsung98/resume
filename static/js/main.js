@@ -127,7 +127,7 @@
     window.addEventListener('load', () => {
       setTimeout(() => {
         preloader.remove()
-      }, 400); // 3 seconds delay
+      }, 200);
     });
   }
 
