@@ -43,7 +43,7 @@
           <li><a href="{% url 'index' %}">Home</a></li>
           <li><a href="{% url 'about' %}">About</a></li>
           <li><a class="active" href="{% url 'portfolio' %}">Portfolio</a></li>
-          <li><a href="{% url 'memo' %}">Memo</a></li>
+          <!--<li><a href="{% url 'memo' %}">Memo</a></li>-->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -67,9 +67,9 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">AI/Data</li>
-              <li data-filter=".filter-card">Hobby</li>
               <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">AI/Data</li>
+<!--              <li data-filter=".filter-card">Hobby</li>-->
               <li data-filter=".filter-global">English</li>
             </ul>
           </div>
@@ -114,18 +114,18 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-global">
-            <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/global-4.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>하위권 입시생들 구원투수 5년차</h4>
-                <p>자체제작 자료(수능 기점으로 실직..)</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'img/portfolio/global-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-global">-->
+<!--            <div class="portfolio-wrap">-->
+<!--              <img src="{% static 'img/portfolio/global-4.jpg' %}" class="img-fluid" alt="">-->
+<!--              <div class="portfolio-info">-->
+<!--                <h4>하위권 입시생들 구원투수 5년차</h4>-->
+<!--                <p>자체제작 자료(수능 기점으로 실직..)</p>-->
+<!--                <div class="portfolio-links">-->
+<!--                  <a href="{% static 'img/portfolio/global-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="{% static 'img/portfolio/portfolio-11.jpg' %}" class="img-fluid" alt="">
@@ -139,12 +139,25 @@
               </div>
             </div>
           </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/portfolio-100.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>의료솔루션 서버 개발</h4>
+                <p>스타트업 스피나이</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'img/portfolio/portfolio-100.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <!-- <a href="{% url 'portfolio-details' %}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="{% static 'img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>OPEN AI 뉴스 요약 서비스</h4>
-                <p>크롤링, Chat gpt API 기반</p>
+                <p>BeautifulSoup 크롤링, Open AI Embedding API 기반</p>
                 <div class="portfolio-links">
                   <a href="{% static 'img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
                   <!-- <a href="{% url 'portfolio-details' %}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
@@ -152,19 +165,19 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-global">
-            <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/global-3.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>서강대 한국어교육원 통역조교</h4>
-                <p>반포 한강공원</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'img/portfolio/global-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-global">-->
+<!--            <div class="portfolio-wrap">-->
+<!--              <img src="{% static 'img/portfolio/global-3.jpg' %}" class="img-fluid" alt="">-->
+<!--              <div class="portfolio-info">-->
+<!--                <h4>서강대 한국어교육원 통역조교</h4>-->
+<!--                <p>반포 한강공원</p>-->
+<!--                <div class="portfolio-links">-->
+<!--                  <a href="{% static 'img/portfolio/global-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+          <!--<div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="{% static 'img/portfolio/portfolio-10.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -172,11 +185,11 @@
                 <p>D2</p>
                 <div class="portfolio-links">
                   <a href="{% static 'img/portfolio/portfolio-10.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                  <!-- <a href="{% url 'portfolio-details' %}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                  &lt;!&ndash; <a href="{% url 'portfolio-details' %}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> &ndash;&gt;
                 </div>
               </div>
             </div>
-          </div>
+          </div>-->
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
@@ -191,18 +204,18 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-global">
-            <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/global-1.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>서강대 한국어교육원 통역조교</h4>
-                <p>홍대~_~</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'img/portfolio/global-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-global">-->
+<!--            <div class="portfolio-wrap">-->
+<!--              <img src="{% static 'img/portfolio/global-1.jpg' %}" class="img-fluid" alt="">-->
+<!--              <div class="portfolio-info">-->
+<!--                <h4>서강대 한국어교육원 통역조교</h4>-->
+<!--                <p>홍대~_~</p>-->
+<!--                <div class="portfolio-links">-->
+<!--                  <a href="{% static 'img/portfolio/global-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <video controls autoplay muted loop class="img-fluid">
@@ -220,38 +233,38 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <video controls autoplay muted loop class="img-fluid">
-                <source src="{% static 'videos/dance.mp4' %}" type="video/mp4">
-              </video>
-              <!-- <img src="{% static 'img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt=""> -->
-              <div class="portfolio-info">
-                <h4>서울 연합 댄스크루</h4>
-                <p>LOCO</p>
-                <div class="portfolio-links">
-                  <video controls autoplay muted loop class="img-fluid">
-                    <source src="{% static 'videos/dance.mp4' %}" type="video/mp4">
-                  </video> <i class="bx bx-plus"></i></a>
-                  <!-- <a href="{% url 'portfolio-details' %}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
+<!--            <div class="portfolio-wrap">-->
+<!--              <video controls autoplay muted loop class="img-fluid">-->
+<!--                <source src="{% static 'videos/dance.mp4' %}" type="video/mp4">-->
+<!--              </video>-->
+<!--              &lt;!&ndash; <img src="{% static 'img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt=""> &ndash;&gt;-->
+<!--              <div class="portfolio-info">-->
+<!--                <h4>서울 연합 댄스크루</h4>-->
+<!--                <p>LOCO</p>-->
+<!--                <div class="portfolio-links">-->
+<!--                  <video controls autoplay muted loop class="img-fluid">-->
+<!--                    <source src="{% static 'videos/dance.mp4' %}" type="video/mp4">-->
+<!--                  </video> <i class="bx bx-plus"></i></a>-->
+<!--                  &lt;!&ndash; <a href="{% url 'portfolio-details' %}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> &ndash;&gt;-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>서강대 중앙 댄스동아리</h4>
-                <p>ON-BEAT</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                  <!-- <a href="{% url 'portfolio-details' %}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
+<!--            <div class="portfolio-wrap">-->
+<!--              <img src="{% static 'img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">-->
+<!--              <div class="portfolio-info">-->
+<!--                <h4>서강대 중앙 댄스동아리</h4>-->
+<!--                <p>ON-BEAT</p>-->
+<!--                <div class="portfolio-links">-->
+<!--                  <a href="{% static 'img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>-->
+<!--                  &lt;!&ndash; <a href="{% url 'portfolio-details' %}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> &ndash;&gt;-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
@@ -267,6 +280,17 @@
                     <source src="{% static 'videos/applion.mp4' %}" type="video/mp4">
                   </video><i class="bx bx-plus"></i></a>
                   <!-- <a href="{% url 'portfolio-details' %}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-global">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/global-100.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>토익 960</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'img/portfolio/global-100.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>

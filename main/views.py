@@ -81,3 +81,8 @@ def delete_post(request, pk):
     post.delete()
     return redirect('memo')
   return render(request, 'main/delete_post.html', {'post': post})
+
+
+from django.core.management.utils import get_random_secret_key
+
+print(get_random_secret_key())
